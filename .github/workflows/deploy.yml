@@ -17,6 +17,5 @@ jobs:
       - name: Déploiement vers GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-         lfs: true
-          token: ${{ secrets.ACCES_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
