@@ -15,10 +15,11 @@ jobs:
     steps:
       - name: Verification
         run: echo "Test de fonctionnement du Runner !"
+
       - name: tests de commandes
         run: |
           echo "Runner OK"
           hostname
           whoami
           uname -a
-         ip -4 address
+          ip -4 address
